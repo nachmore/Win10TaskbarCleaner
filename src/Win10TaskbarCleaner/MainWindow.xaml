@@ -1,0 +1,12 @@
+﻿<Window x:Class="Win10TaskbarCleaner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Loaded="Window_Loaded" WindowState="Normal" ResizeMode="NoResize"
+        Title="Windows 10 Task Bar Cleaner (for Technical Preview) v0.1 alpha for Enterprising Individuals Pro" Height="350" Width="525" Icon="PropertyIcon.ico">
+    <Grid>
+        <TextBlock TextWrapping="Wrap" Margin="10,10,10,191">Windows 10 TP ships with 2 irremovable buttons on the TaskBar - Search and "Task View" (i.e. Win+Tab in a button). Until an option to remove the buttons lands in the OS you can use this utility to remove the buttons. Click Install below and you should be done!<LineBreak/><LineBreak/>Note: The TaskBar likes to readjust its controls every now and then so you may occasionally see your controls jump back and forth.</TextBlock>
+        <TextBlock Margin="10,288,431,10"><Hyperlink NavigateUri="https://github.com/nachmore/Win10TaskbarCleaner" RequestNavigate="Hyperlink_RequestNavigate">Project Site</Hyperlink></TextBlock>
+        <Button Name="btnInstall" Margin="154,174,154,75" Click="btnInstall_Click"></Button>
+        <Button Content="Try it out" Name="btnCleanNow" Margin="376,267,27,10" Click="btnCleanNow_Click"></Button>
+    </Grid>
+</Window>
